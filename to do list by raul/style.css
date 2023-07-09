@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.to_do_list {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: rgb(20, 115, 64);
+  background: linear-gradient(
+    90deg,
+    rgba(20, 115, 64, 1) 0%,
+    rgba(37, 29, 161, 1) 0%,
+    rgba(30, 66, 119, 1) 0%,
+    rgba(28, 75, 109, 1) 0%,
+    rgba(17, 132, 99, 1) 0%,
+    rgba(31, 136, 208, 1) 100%,
+    rgba(16, 135, 105, 1) 100%,
+    rgba(13, 150, 134, 1) 100%,
+    rgba(9, 168, 169, 1) 100%,
+    rgba(6, 183, 198, 1) 100%,
+    rgba(0, 27, 255, 1) 100%,
+    rgba(0, 212, 255, 1) 100%,
+    rgba(25, 87, 95, 1) 100%
+  );
+}
+.form_group{
+    width: 400px;
+    padding: 20px;
+  background-color: #ddd;
+  border-radius: 10px;
+}
+/* list  */
+.lists {
+    list-style: none;
+}
+
+.lists li {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    background-color: #B7B7B7;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+.lists li i{
+   color: #164B60;
+}
+
+
+
+.lists li:hover {
+    background-color:#EEEEEE;
+    cursor: pointer;
+}
+
+.lists li:hover a {
+    color: #4C4B16;
+    cursor: pointer;
+}
+
+.lists li:hover i {
+    color: red;
+    cursor: pointer;
+}
+
+.lists li a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.lists li i {
+    font-size: 20px;
+    transition: all 0.3s ease-in-out;
+}
+/* form */
+form{
+    width: 100%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+form input{
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    flex: 1 1 auto;
+    border-radius: 5px;
+    font-size: 20px;
+    border: 1px solid #2D4356;
+}
+form input:focus {
+    border: 1px solid #4FC0D0;
+}
+
+form button {
+    border: 1px solid #2D4356;
+    background: #2D4356;
+    border-radius: 8px;
+    color: white;
+    padding: 5px 10px;
+}
+
+form button:hover {
+ background: white;
+    color: #164B60;
+    cursor: pointer;
+}
